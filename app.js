@@ -42,7 +42,7 @@ app.get("/", function (req, res) {
        default:
            console.log("error:current day is equal to "+ currentDay);
    }
-    res.render("list",{kindOfDay:day})
+    res.render("list",{kindOfDay:day}) //list is the name of the ejs file i am using 
 });
 
 app.listen(3000, function () {
