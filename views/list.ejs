@@ -7,7 +7,29 @@
     <title>to do list</title>
 </head>
 <body>
-    <h1>Today is a <%= kindOfDay %> </h1>
+
+    <h1> <%= kindOfDay %> </h1>
+    <ul>
+       
+       
+        <%for (let i=0; i<newListItems.length; i++){ %>
+            <li> <%= newListItems[i] %></li>
+      <%  } %>
+    </ul>
+
+    <form class ="" action="/" method="POST">
+    <input style="font-size:1.2em" type="text" name="newItem">
+    <button style="font-size:1.2em" type="submit" name="button">submit</button>
+    
+    </form>
     
 </body>
 </html>
+
+
+
+
+
+
+    <!-- this is a way if using ejs templating to run javascript inside the html as long as it is control flow ()if then < % -->
+   
